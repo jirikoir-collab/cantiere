@@ -1,0 +1,1577 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: #181818;
+background: #fff;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+height: 80px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 0 6%;
+
+background: white;
+
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+z-index: 1000;
+
+border-bottom: 1px solid #eee;
+}
+
+.logo {
+font-size: 22px;
+font-weight: 900;
+letter-spacing: -1px;
+}
+
+.logo span {
+color: #f39a16;
+}
+
+.nav {
+display: flex;
+gap: 32px;
+}
+
+.nav a {
+font-size: 14px;
+font-weight: 600;
+}
+
+.nav a:hover {
+color: #f39a16;
+}
+
+.header-btn {
+background: #f39a16;
+color: white;
+
+padding: 14px 22px;
+
+font-size: 13px;
+font-weight: bold;
+}
+
+.menu-btn {
+display: none;
+
+background: none;
+border: 0;
+
+font-size: 28px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+min-height: 760px;
+
+margin-top: 80px;
+
+position: relative;
+
+display: flex;
+align-items: center;
+
+background-image: url("bagr.jpeg");
+background-size: cover;
+background-position: center;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+
+background: rgba(0, 0, 0, 0.58);
+}
+
+.hero-content {
+position: relative;
+
+max-width: 850px;
+
+margin-left: 8%;
+
+color: white;
+}
+
+.small-title,
+.section-label {
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2px;
+
+color: #f39a16;
+}
+
+.hero h1 {
+font-size: clamp(50px, 7vw, 92px);
+
+line-height: .95;
+
+margin: 20px 0;
+}
+
+.hero h1 span {
+color: #f39a16;
+}
+
+.hero-text {
+max-width: 550px;
+
+font-size: 19px;
+line-height: 1.6;
+
+color: #ddd;
+}
+
+.hero-buttons {
+display: flex;
+gap: 15px;
+
+margin-top: 35px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn {
+display: inline-block;
+
+padding: 17px 28px;
+
+font-size: 13px;
+font-weight: 800;
+
+transition: .2s;
+}
+
+.primary {
+background: #f39a16;
+color: white;
+}
+
+.primary:hover {
+background: #d98000;
+}
+
+.secondary {
+border: 1px solid white;
+color: white;
+}
+
+.secondary:hover {
+background: white;
+color: #111;
+}
+
+.white {
+background: white;
+color: #111;
+}
+
+.white:hover {
+background: #eee;
+}
+
+
+/* ================= INFO BAR ================= */
+
+.info-bar {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+background: #171717;
+
+color: white;
+}
+
+.info-bar div {
+padding: 32px;
+
+border-right: 1px solid #333;
+
+text-align: center;
+}
+
+.info-bar strong {
+display: block;
+
+font-size: 30px;
+
+color: #f39a16;
+}
+
+.info-bar span {
+display: block;
+
+margin-top: 7px;
+
+color: #aaa;
+
+font-size: 13px;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+padding: 120px 8%;
+}
+
+.about {
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap: 80px;
+
+align-items: center;
+}
+
+.about-image img {
+width: 100%;
+height: 550px;
+
+object-fit: cover;
+}
+
+.about-content h2,
+.section-heading h2 {
+font-size: 52px;
+
+line-height: 1.05;
+
+margin: 20px 0 30px;
+}
+
+.about-content p {
+color: #666;
+
+line-height: 1.8;
+
+max-width: 600px;
+}
+
+.text-link {
+display: inline-block;
+
+margin-top: 20px;
+
+font-weight: 800;
+
+color: #f39a16;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+background: #f5f5f3;
+}
+
+.section-heading {
+display: flex;
+
+justify-content: space-between;
+align-items: end;
+
+margin-bottom: 60px;
+}
+
+.section-heading > p {
+max-width: 350px;
+
+color: #777;
+
+line-height: 1.6;
+}
+
+.services-grid {
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 2px;
+
+background: #ddd;
+}
+
+.service-card {
+background: white;
+
+padding: 40px;
+
+min-height: 280px;
+
+transition: .25s;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-number {
+color: #f39a16;
+
+font-size: 13px;
+
+font-weight: bold;
+}
+
+.service-card h3 {
+font-size: 26px;
+
+margin-top: 55px;
+}
+
+.service-card p {
+color: #777;
+
+line-height: 1.6;
+}
+
+.service-card a {
+color: #f39a16;
+
+font-size: 13px;
+
+font-weight: bold;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+padding: 90px 8%;
+
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+
+background: #f39a16;
+}
+
+.cta .section-label {
+color: white;
+}
+
+.cta h2 {
+color: white;
+
+font-size: 55px;
+
+line-height: 1;
+
+margin: 10px 0 0;
+}
+
+.cta h2 span {
+color: #171717;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects-grid {
+display: grid;
+
+grid-template-columns: 2fr 1fr;
+
+gap: 20px;
+}
+
+.project {
+position: relative;
+
+height: 350px;
+
+overflow: hidden;
+}
+
+.project.large {
+grid-row: span 2;
+
+height: 720px;
+}
+
+.project img {
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+
+transition: .5s;
+}
+
+.project:hover img {
+transform: scale(1.05);
+}
+
+.project::after {
+content: "";
+
+position: absolute;
+
+inset: 0;
+
+background: linear-gradient(
+transparent 45%,
+rgba(0,0,0,.8)
+);
+}
+
+.project-info {
+position: absolute;
+
+left: 30px;
+bottom: 25px;
+
+z-index: 2;
+
+color: white;
+}
+
+.project-info span {
+color: #f39a16;
+
+font-size: 12px;
+
+font-weight: bold;
+}
+
+.project-info h3 {
+margin: 7px 0 0;
+
+font-size: 25px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+padding: 120px 8%;
+
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap: 100px;
+
+background: #171717;
+
+color: white;
+}
+
+.contact-left h2 {
+font-size: 60px;
+
+line-height: 1;
+
+margin: 20px 0;
+}
+
+.contact-left > p:not(.section-label) {
+color: #aaa;
+
+line-height: 1.7;
+
+max-width: 500px;
+}
+
+.contact-details {
+margin-top: 50px;
+
+display: grid;
+
+gap: 25px;
+}
+
+.contact-details span {
+display: block;
+
+color: #888;
+
+font-size: 12px;
+
+margin-bottom: 5px;
+}
+
+.contact-details strong {
+font-size: 17px;
+}
+
+.contact-form {
+padding: 45px;
+
+background: white;
+
+color: #111;
+}
+
+.contact-form h3 {
+font-size: 28px;
+
+margin-top: 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+width: 100%;
+
+padding: 17px;
+
+margin-bottom: 14px;
+
+border: 1px solid #ddd;
+
+font-family: inherit;
+
+font-size: 14px;
+}
+
+.contact-form textarea {
+resize: vertical;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+background: #101010;
+
+color: white;
+
+padding: 60px 8% 20px;
+}
+
+.footer-top {
+display: grid;
+
+grid-template-columns: 2fr 1fr 1fr;
+
+gap: 60px;
+
+padding-bottom: 50px;
+}
+
+.footer-top p {
+color: #777;
+
+line-height: 1.7;
+}
+
+.footer-top h4 {
+margin-top: 0;
+}
+
+.footer-top > div:not(:first-child) a {
+display: block;
+
+color: #888;
+
+margin-bottom: 12px;
+
+font-size: 14px;
+}
+
+.footer-bottom {
+padding-top: 20px;
+
+border-top: 1px solid #222;
+
+color: #555;
+
+font-size: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+.nav,
+.header-btn {
+display: none;
+}
+
+.menu-btn {
+display: block;
+}
+
+.nav.active {
+display: flex;
+
+position: absolute;
+
+top: 80px;
+left: 0;
+right: 0;
+
+padding: 25px;
+
+background: white;
+
+flex-direction: column;
+
+gap: 20px;
+}
+
+.hero {
+min-height: 650px;
+}
+
+.hero-content {
+margin: 0 7%;
+}
+
+.info-bar {
+grid-template-columns: 1fr 1fr;
+}
+
+.about,
+.contact {
+grid-template-columns: 1fr;
+
+gap: 50px;
+}
+
+.services-grid {
+grid-template-columns: 1fr 1fr;
+}
+
+.section-heading {
+display: block;
+}
+
+.projects-grid {
+grid-template-columns: 1fr;
+}
+
+.project,
+.project.large {
+height: 400px;
+grid-row: auto;
+}
+
+.cta {
+display: block;
+}
+
+.cta .btn {
+margin-top: 30px;
+}
+
+.footer-top {
+grid-template-columns: 1fr;
+}
+}
+
+
+@media (max-width: 600px) {
+
+.header {
+padding: 0 5%;
+}
+
+.hero h1 {
+font-size: 48px;
+}
+
+.hero-buttons {
+flex-direction: column;
+
+align-items: flex-start;
+}
+
+.info-bar {
+grid-template-columns: 1fr;
+}
+
+.section {
+padding: 80px 6%;
+}
+
+.about-image img {
+height: 350px;
+}
+
+.about-content h2,
+.section-heading h2 {
+font-size: 38px;
+}
+
+.services-grid {
+grid-template-columns: 1fr;
+}
+
+.cta {
+padding: 70px 6%;
+}
+
+.cta h2 {
+font-size: 40px;
+}
+
+.contact {
+padding: 80px 6%;
+}
+
+.contact-left h2 {
+font-size: 45px;
+}
+
+.contact-form {
+padding: 25px;
+}
+}
+.logo img {width: 140px;
+    height: auto;
+    display: block;
+    }
+
+
+    /* ================= GALLERY ================= */
+
+.project {
+cursor: pointer;
+}
+
+.project-info small {
+display: block;
+
+margin-top: 10px;
+
+color: #ddd;
+
+font-size: 12px;
+
+opacity: 0;
+
+transform: translateY(5px);
+
+transition: .25s;
+}
+
+.project:hover .project-info small {
+opacity: 1;
+
+transform: translateY(0);
+}
+
+
+/* MODAL */
+
+.gallery-modal {
+position: fixed;
+
+inset: 0;
+
+z-index: 9999;
+
+background: rgba(0, 0, 0, 0.94);
+
+display: none;
+
+align-items: center;
+justify-content: center;
+}
+
+.gallery-modal.active {
+display: flex;
+}
+
+
+.gallery-content {
+width: min(1000px, 80vw);
+
+text-align: center;
+
+position: relative;
+}
+
+
+.gallery-content img {
+width: 100%;
+
+max-height: 75vh;
+
+object-fit: contain;
+
+display: block;
+
+margin: auto;
+}
+
+
+.gallery-caption {
+text-align: left;
+
+margin-top: 15px;
+
+color: white;
+}
+
+.gallery-caption span {
+color: #f39a16;
+
+font-size: 12px;
+
+font-weight: bold;
+
+text-transform: uppercase;
+}
+
+.gallery-caption h3 {
+margin: 5px 0;
+
+font-size: 22px;
+}
+
+.gallery-caption p {
+margin: 0;
+
+color: #999;
+
+font-size: 13px;
+}
+
+
+/* CLOSE */
+
+.gallery-close {
+position: absolute;
+
+top: 25px;
+right: 35px;
+
+z-index: 10;
+
+border: none;
+
+background: none;
+
+color: white;
+
+font-size: 45px;
+
+cursor: pointer;
+}
+
+
+/* ARROWS */
+
+.gallery-arrow {
+position: absolute;
+
+top: 50%;
+
+transform: translateY(-50%);
+
+width: 55px;
+height: 55px;
+
+border-radius: 50%;
+
+border: 1px solid rgba(255,255,255,.4);
+
+background: rgba(0,0,0,.4);
+
+color: white;
+
+font-size: 40px;
+
+line-height: 40px;
+
+cursor: pointer;
+
+transition: .2s;
+}
+
+.gallery-arrow:hover {
+background: #f39a16;
+
+border-color: #f39a16;
+}
+
+.gallery-prev {
+left: 30px;
+}
+
+.gallery-next {
+right: 30px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+.gallery-content {
+width: 90vw;
+}
+
+.gallery-arrow {
+width: 45px;
+height: 45px;
+
+font-size: 30px;
+}
+
+.gallery-prev {
+left: 10px;
+}
+
+.gallery-next {
+right: 10px;
+}
+
+.gallery-close {
+top: 10px;
+right: 15px;
+}
+
+}
+
+
+
+/* ========================================
+PŮJČOVNA
+RESPONSIVE - PC / NOTEBOOK / TABLET / MOBIL
+======================================== */
+
+.rental-section {
+width: 100%;
+background: #f5f5f3;
+padding: 100px 0;
+}
+
+.rental-container {
+width: min(1200px, calc(100% - 40px));
+margin: 0 auto;
+}
+
+
+/* ========================================
+NADPIS
+======================================== */
+
+.rental-heading {
+max-width: 720px;
+margin: 0 0 50px;
+}
+
+.rental-label {
+display: inline-block;
+margin-bottom: 12px;
+
+color: #f39a16;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.rental-heading h2 {
+margin: 0 0 16px;
+
+color: #171717;
+font-size: clamp(30px, 4vw, 44px);
+line-height: 1.1;
+font-weight: 700;
+}
+
+.rental-heading p {
+margin: 0;
+
+color: #666;
+font-size: 17px;
+line-height: 1.7;
+}
+
+
+/* ========================================
+GRID
+======================================== */
+
+.rental-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 25px;
+}
+
+
+/* ========================================
+KARTA
+======================================== */
+
+.rental-card {
+min-width: 0;
+background: #fff;
+overflow: hidden;
+
+transition:
+transform 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.rental-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ========================================
+OBRÁZEK
+======================================== */
+
+.rental-image {
+width: 100%;
+height: clamp(230px, 25vw, 320px);
+
+overflow: hidden;
+background: #ddd;
+}
+
+.rental-image img {
+width: 100%;
+height: 100%;
+
+display: block;
+object-fit: cover;
+
+transition: transform 0.5s ease;
+}
+
+.rental-card:hover .rental-image img {
+transform: scale(1.05);
+}
+
+
+/* ========================================
+OBSAH KARTY
+======================================== */
+
+.rental-content {
+padding: clamp(22px, 3vw, 32px);
+}
+
+.rental-number {
+display: block;
+margin-bottom: 9px;
+
+color: #f39a16;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.rental-content h3 {
+margin: 0 0 13px;
+
+color: #171717;
+font-size: clamp(22px, 2.5vw, 28px);
+line-height: 1.2;
+}
+
+.rental-content p {
+margin: 0 0 24px;
+
+color: #666;
+font-size: 15px;
+line-height: 1.7;
+}
+
+.rental-link {
+display: flex;
+justify-content: space-between;
+float: right;
+
+color: #171717;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+
+transition: color 0.2s ease;
+}
+
+.rental-link:hover {
+color: #f39a16;
+}
+
+
+/* ========================================
+VELKÉ NOTEBOOKY / MENŠÍ PC
+1200 px
+======================================== */
+
+@media (max-width: 1200px) {
+
+.rental-section {
+padding: 90px 0;
+}
+
+.rental-container {
+width: min(1100px, calc(100% - 40px));
+}
+
+}
+
+
+/* ========================================
+TABLET
+900 px
+======================================== */
+
+@media (max-width: 900px) {
+
+.rental-section {
+padding: 75px 0;
+}
+
+.rental-container {
+width: calc(100% - 36px);
+}
+
+.rental-heading {
+margin-bottom: 40px;
+}
+
+.rental-heading p {
+font-size: 16px;
+}
+
+.rental-grid {
+gap: 20px;
+}
+
+.rental-image {
+height: 250px;
+}
+
+.rental-content {
+padding: 25px;
+}
+
+}
+
+
+/* ========================================
+VĚTŠÍ MOBIL
+700 px
+======================================== */
+
+@media (max-width: 700px) {
+
+.rental-section {
+padding: 65px 0;
+}
+
+.rental-container {
+width: calc(100% - 30px);
+}
+
+.rental-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.rental-image {
+height: 280px;
+}
+
+}
+
+
+/* ========================================
+MOBIL
+600 px
+======================================== */
+
+@media (max-width: 600px) {
+
+.rental-section {
+padding: 55px 0;
+}
+
+.rental-container {
+width: calc(100% - 28px);
+}
+
+.rental-heading {
+margin-bottom: 32px;
+}
+
+.rental-label {
+font-size: 12px;
+letter-spacing: 1.5px;
+}
+
+.rental-heading h2 {
+font-size: 30px;
+}
+
+.rental-heading p {
+font-size: 15px;
+line-height: 1.6;
+}
+
+.rental-grid {
+gap: 18px;
+}
+
+.rental-image {
+height: 230px;
+}
+
+.rental-content {
+padding: 23px;
+}
+
+.rental-content h3 {
+font-size: 23px;
+}
+
+.rental-content p {
+font-size: 14px;
+line-height: 1.65;
+margin-bottom: 20px;
+}
+
+}
+
+
+/* ========================================
+MALÝ MOBIL
+400 px
+======================================== */
+
+@media (max-width: 400px) {
+
+.rental-section {
+padding: 45px 0;
+}
+
+.rental-container {
+width: calc(100% - 22px);
+}
+
+.rental-heading h2 {
+font-size: 27px;
+}
+
+.rental-heading p {
+font-size: 14px;
+}
+
+.rental-image {
+height: 210px;
+}
+
+.rental-content {
+padding: 20px;
+}
+
+.rental-content h3 {
+font-size: 21px;
+}
+
+.rental-content p {
+font-size: 14px;
+}
+
+}
+
+
+/* ========================================
+EXTRA MALÝ TELEFON
+350 px
+======================================== */
+
+@media (max-width: 350px) {
+
+.rental-section {
+padding: 40px 0;
+}
+
+.rental-container {
+width: calc(100% - 20px);
+}
+
+.rental-heading h2 {
+font-size: 25px;
+}
+
+.rental-image {
+height: 190px;
+}
+
+.rental-content {
+padding: 18px;
+}
+
+}
+
+
+/* ========================================
+POPUP DETAIL PŮJČOVNY
+======================================== */
+
+.rental-detail-btn {
+border: none;
+padding: 0;
+
+background: none;
+
+color: #171717;
+font-family: inherit;
+font-size: 14px;
+font-weight: 700;
+
+cursor: pointer;
+transition: color .2s ease;
+}
+
+.rental-detail-btn:hover {
+color: #f39a16;
+}
+
+
+/* POZADÍ */
+
+.rental-modal {
+position: fixed;
+inset: 0;
+
+z-index: 99999;
+
+display: none;
+align-items: center;
+justify-content: center;
+
+padding: 25px;
+
+background: rgba(0, 0, 0, .72);
+}
+
+.rental-modal.active {
+display: flex;
+}
+
+
+/* OKNO */
+
+.rental-modal-box {
+position: relative;
+
+width: min(1000px, 100%);
+max-height: 90vh;
+
+display: grid;
+grid-template-columns: 40% 60%;
+
+background: #fff;
+
+overflow: hidden;
+}
+
+
+/* FOTO */
+
+.rental-modal-photo {
+min-height: 550px;
+}
+
+.rental-modal-photo img {
+width: 85%;
+max-width: 700px;
+height: auto;
+margin: 0 auto;
+display: block;
+object-fit: contain;
+min-height: 550px;
+display: flex;
+align-items: center;
+justify-content: center
+}
+
+
+/* TEXT */
+
+.rental-modal-content {
+padding: 50px;
+
+overflow-y: auto;
+}
+
+.rental-modal-number {
+color: #f39a16;
+
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.rental-modal-content h2 {
+margin: 12px 0 30px;
+
+color: #171717;
+
+font-size: clamp(30px, 4vw, 45px);
+line-height: 1.1;
+}
+
+.rental-modal-content p {
+margin: 0 0 20px;
+
+color: #666;
+
+font-size: 15px;
+line-height: 1.8;
+}
+
+.rental-modal-content h3 {
+margin: 30px 0 12px;
+
+color: #171717;
+
+font-size: 20px;
+}
+
+
+/* ZAVŘÍT */
+
+.rental-modal-close {
+position: absolute;
+
+top: 15px;
+right: 15px;
+
+z-index: 10;
+
+width: 42px;
+height: 42px;
+
+border: 0;
+
+background: rgba(0, 0, 0, .65);
+color: white;
+
+font-size: 30px;
+line-height: 1;
+
+cursor: pointer;
+
+transition: .2s;
+}
+
+.rental-modal-close:hover {
+background: #f39a16;
+}
+
+
+/* ========================================
+TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+.rental-modal {
+padding: 15px;
+}
+
+.rental-modal-box {
+grid-template-columns: 1fr;
+
+max-height: 92vh;
+
+overflow-y: auto;
+}
+
+.rental-modal-photo {
+height: 280px;
+min-height: 280px;
+}
+
+.rental-modal-content {
+padding: 35px;
+}
+
+}
+
+
+/* ========================================
+MOBIL
+======================================== */
+
+@media (max-width: 600px) {
+
+.rental-modal {
+padding: 8px;
+}
+
+.rental-modal-box {
+max-height: 94vh;
+}
+
+.rental-modal-photo {
+height: 210px;
+min-height: 210px;
+}
+
+.rental-modal-content {
+padding: 28px 22px;
+}
+
+.rental-modal-content h2 {
+font-size: 30px;
+margin-bottom: 22px;
+}
+
+.rental-modal-content p {
+font-size: 14px;
+line-height: 1.7;
+}
+
+.rental-modal-close {
+top: 10px;
+right: 10px;
+
+width: 38px;
+height: 38px;
+
+font-size: 27px;
+}
+
+}
+
+
+
+

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CANTIERE STAV | Stavební firma</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<a href="#" class="logo">
+    <img src="logo.png">
+</a>
+
+<nav class="nav">
+<a href="#home">Domů</a>
+<a href="#about">O nás</a>
+<a href="#services">Služby</a>
+<a href="#projects">Reference</a>
+<a href="#rental">Půjčovna</a>
+<a href="#contact">Kontakt</a>
+</nav>
+
+<a href="#contact" class="header-btn">
+Nezávazná poptávka
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<p class="small-title">
+STAVEBNÍ FIRMA • OD ZAČÁTKU DO KONCE S VÁMI
+</p>
+
+<h1>
+Stavíme kvalitně.<br>
+Stavíme <span>pro vás.</span>
+</h1>
+
+<p class="hero-text">
+Kompletní stavební práce od rekonstrukcí
+až po realizaci novostaveb.
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn primary">
+Nezávazná poptávka
+</a>
+
+<a href="#projects" class="btn secondary">
+Naše realizace →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section about">
+
+<div class="about-image">
+<img src="logo.png" alt="Stavební práce">
+</div>
+
+<div class="about-content">
+
+<p class="section-label">
+O NAŠÍ FIRMĚ
+</p>
+
+<h2>
+Stavíme na zkušenostech,
+kvalitě a důvěře.
+</h2>
+
+<p>
+Jsme česká stavební firma zaměřená na kvalitní
+realizaci staveb, rekonstrukcí a dalších
+stavebních prací.
+</p>
+
+<p>
+Ke každému projektu přistupujeme individuálně.
+Zakládáme si na kvalitním provedení, dodržování
+termínů a férovém jednání.
+</p>
+
+<a href="#contact" class="text-link">
+Zjistit více o nás →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section services-section">
+
+<div class="section-heading">
+
+<div>
+<p class="section-label">CO NABÍZÍME</p>
+
+<h2>
+Naše služby
+</h2>
+</div>
+</div>
+
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<div class="service-number">01</div>
+
+<h3>Bourací a demoliční práce</h3>
+
+<p>
+Bourací a demoliční práce včetně odstranění staveb, konstrukcí a úprav prostor.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-number">02</div>
+
+<h3>Rekonstrukce</h3>
+
+<p>
+Rekonstrukce bytů, domů, kanceláří
+a dalších prostor.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-number">03</div>
+
+<h3>Obkladačské práce</h3>
+
+<p>
+Provádíme obkladačské práce v interiéru i exteriéru,
+ včetně pokládky obkladů a dlažeb.</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-number">04</div>
+
+<h3>Fasády</h3>
+
+<p>
+Kompletní realizace a renovace
+fasád včetně povrchových úprav.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-number">05</div>
+
+<h3>Zemní práce</h3>
+
+<p>
+Provádíme zemní práce, včetně výkopů,
+ základových desek, chodníků, příjezdových cest a dalších terénních úprav.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-number">06</div>
+
+<h3>Dokončovací práce</h3>
+
+<p>
+Kompletní dokončovací práce
+interiérů i exteriérů.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects">
+
+<div class="section-heading">
+
+<div>
+<p class="section-label">NAŠE PRÁCE</p>
+
+<h2>
+Vybrané realizace
+</h2>
+</div>
+</div>
+
+
+<div class="projects-grid">
+
+<!-- REALIZACE 1 -->
+<div class="project large" onclick="openGallery(0)">
+
+<img src="skola12.jpeg" alt="Rekonstrukce školy">
+
+<div class="project-info">
+<span>Rekonstrukce</span>
+<h3>Rekonstrukce školy - Uničov</h3>
+<small>Zobrazit galerii →</small>
+</div>
+
+</div>
+
+
+<!-- REALIZACE 2 -->
+<div class="project" onclick="openGallery(1)">
+
+<img src="prestavba1.jpeg" alt="Přestavba balkónu na koupelnu">
+
+<div class="project-info">
+<span>Přestavba</span>
+<h3>Přestavba balkónu na koupelnu</h3>
+<small>Zobrazit galerii →</small>
+</div>
+
+</div>
+
+
+<!-- REALIZACE 3 -->
+<div class="project" onclick="openGallery(2)">
+
+<img src="rek2.jpeg" alt="Rekonstrukce">
+
+<div class="project-info">
+<span>Rekonstrukce</span>
+<h3>Rekonstrukce 3 bytových jednotek - právě realizujeme</h3>
+<small>Zobrazit galerii →</small>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= GALERIE ================= -->
+
+<div id="galleryModal" class="gallery-modal">
+
+<button class="gallery-close" onclick="closeGallery()">
+×
+</button>
+
+<button class="gallery-arrow gallery-prev" onclick="changePhoto(-1)">
+‹
+</button>
+
+<div class="gallery-content">
+
+<img id="galleryImage" src="" alt="Fotografie realizace">
+
+<div class="gallery-caption">
+
+<span id="galleryCategory"></span>
+
+<h3 id="galleryTitle"></h3>
+
+<p id="galleryCounter"></p>
+
+</div>
+
+</div>
+
+<button class="gallery-arrow gallery-next" onclick="changePhoto(1)">
+›
+</button>
+
+</div>
+
+<!-- PŮJČOVNA -->
+<section id="rental" class="rental-section">
+
+<div class="rental-container">
+
+<div class="rental-heading">
+<span class="rental-label">PŮJČOVNA</span>
+<h2>Stavební technika k zapůjčení</h2>
+<p>
+Nabízíme k zapůjčení stavební techniku pro menší i větší projekty.
+</p>
+</div>
+
+<div class="rental-grid">
+
+<!-- Drtička -->
+<div class="rental-card">
+<div class="rental-image">
+<img src="drt.JPG" alt="Drtička">
+</div>
+
+<div class="rental-content">
+<span class="rental-number">01</span>
+<h3>Drtička</h3>
+<p>Drtič drobné stavební suti RESTA 350×110</p>
+
+<button class="rental-detail-btn" onclick="openRentalDetail('drticka')">
+Detail →
+</button>
+
+
+
+<a href="#contact" class="rental-link">
+Poptat půjčení →
+</a>
+</div>
+</div>
+
+
+<!-- Elektrocentrála -->
+<div class="rental-card">
+<div class="rental-image">
+<img src="centrala.jpg" alt="Elektrocentrála">
+</div>
+
+<div class="rental-content">
+<span class="rental-number">02</span>
+<h3>Elektrocentrála</h3>
+
+<p>
+Elektrocentrála LENGERS LBR4960V
+</p>
+<button class="rental-detail-btn" onclick="openRentalDetail('elektrocentrala')">
+Detail →
+</button>
+
+<a href="#contact" class="rental-link">
+Poptat půjčení →
+</a>
+</div>
+</div>
+
+
+<!-- Vibrační deska -->
+<div class="rental-card">
+<div class="rental-image">
+<img src="vibrdesk.png" alt="Vibrační deska">
+</div>
+
+<div class="rental-content">
+<span class="rental-number">03</span>
+<h3>Vibrační deska</h3>
+
+<p>
+Vibrační deska WACKER NEUSON s kropením
+</p>
+
+<button class="rental-detail-btn" onclick="openRentalDetail('vibracni')">
+Detail →
+</button>
+
+<a href="#contact" class="rental-link">
+Poptat půjčení →
+</a>
+</div>
+</div>
+
+
+<!-- Stavební výtah -->
+<div class="rental-card">
+<div class="rental-image">
+<img src="vytahh.webp" alt="Stavební výtah">
+</div>
+
+<div class="rental-content">
+<span class="rental-number">04</span>
+<h3>Stavební výtah</h3>
+
+<p>
+Výtah stavební šikmý 13 m 
+</p>
+
+<button class="rental-detail-btn" onclick="openRentalDetail('vytah')">
+Detail →
+</button>
+
+
+<a href="#contact" class="rental-link">
+Poptat půjčení →
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+<div class="contact-left">
+
+<p class="section-label">
+KONTAKT
+</p>
+<h2>
+Máte zájem<br>
+o spolupráci?
+</h2>
+
+<p>
+Napište nám nebo zavolejte.
+Rádi s vámi probereme váš projekt.
+</p>
+
+<div class="contact-details">
+
+<p class="section-label">
+Cantiere Stav s.r.o
+</p>
+
+<div>
+<span>IČ</span>
+<a href="https://verejnerejstriky.msp.gov.cz/vypis/1323923">
+<strong>296 77 211</strong>
+</a>
+</div>
+
+
+<div>
+<span>Telefon</span>
+<a href="+420774621104">
+    <strong>+420 774 621 104</strong>
+</a>
+</div>
+
+<div>
+<span>E-mail</span>
+<a href="mailto:info@cantierestav.cz">
+    <strong>info@cantierestav.cz</strong>
+</a>
+</div>
+
+<div>
+<span>Adresa provozovny</span>
+<a href="https://maps.app.goo.gl/i69DptNWa5yB41RJA" target="_blank">
+    <strong>Litovelská 1375, Uničov</strong>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+<form class="contact-form" onsubmit="sendForm(event)">
+
+<h3>Nezávazná poptávka</h3>
+
+<input
+type="text"
+placeholder="Jméno a příjmení"
+required
+>
+
+<input
+type="email"
+placeholder="E-mail"
+required
+>
+
+<input
+type="tel"
+placeholder="Telefon"
+required
+>
+
+<select>
+<option value="">Typ projektu</option>
+<option>Bourací a demoliční práce </option>
+<option>Rekonstrukce</option>
+<option>Fasáda</option>
+<option>Obkladačské práce</option>
+<option>Jiné</option>
+</select>
+
+<textarea
+placeholder="Popište nám váš projekt..."
+rows="5"
+></textarea>
+
+<button type="submit" class="btn primary">
+Odeslat poptávku →
+</button>
+
+</form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-top">
+
+<div>
+<a href="#" class="logo">
+<img src="logoo.jpeg">
+</a>
+
+<p>
+Stavíme kvalitně, spolehlivě
+a s důrazem na detail.
+</p>
+</div>
+
+
+<div>
+<h4>Naše firma</h4>
+
+<a href="#home">Domů</a>
+<a href="#about">O nás</a>
+<a href="#services">Služby</a>
+<a href="#projects">Reference</a>
+<a href="rental">Půjčovna</a>
+<a href="#contact">Kontakt</a>
+</div>
+
+
+<div>
+<h4>Kontakt</h4>
+
+<a href="tel:+420774621104">
+<p>+420 774 621 104</p></a>
+<a href="mailto:info@cantierestav.cz">
+<p>info@cantierestav.cz</p></a>
+<p>Olomouc a okolí</p>
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+© 2026 CANTIERE STAV S.R.O Všechna práva vyhrazena.
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!-- DETAIL PŮJČOVNY -->
+
+<div id="rentalModal" class="rental-modal">
+
+<div class="rental-modal-box">
+
+<button class="rental-modal-close" onclick="closeRentalDetail()">×</button>
+
+<div class="rental-modal-photo">
+<img id="rentalModalImage" src="" alt="">
+</div>
+
+<div class="rental-modal-content">
+
+<span id="rentalModalNumber" class="rental-modal-number"></span>
+
+<h2 id="rentalModalTitle"></h2>
+
+<div id="rentalModalText"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+

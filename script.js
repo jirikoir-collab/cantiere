@@ -217,7 +217,7 @@ text: `
 vibracni: {
 number: "03",
 title: "Vibrační deska",
-image: "vibrdeskk.png",
+image: "vibrdeesk.png",
 text: `
 <h3>Technické údaje</h3>
 

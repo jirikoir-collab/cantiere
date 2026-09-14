@@ -1572,6 +1572,13 @@ font-size: 27px;
 
 }
 
+@media (max-width: 1200px) {
+    .rental-modal-photo {
+        display: none;
+        }
+    }
+        
+
 
 
 
